@@ -1,0 +1,41 @@
+/* Add application styles & imports to this file! */
+label {
+  display: block;
+}
+
+form {
+  max-width: 80%;
+}
+
+.progress-container {
+  max-width: 80%;
+}
+
+.progress-completed {
+  color: rgb(25, 161, 25);
+}
+
+mat-progress-bar {
+  margin: 10px 0;
+  background-color: rgb(158, 158, 158);
+}
+
+form button {
+  margin-left: 10px;
+}
+
+input {
+  margin: 5px 0;
+}
+
+.btn-container {
+  margin: 10px 0;
+}
+
+.btn-container > button {
+  margin-right: 10px;
+}
+
+.comment-input {
+  width: 70%;
+}
