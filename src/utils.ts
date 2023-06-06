@@ -3,6 +3,8 @@ const EXPORT_FILE_EXT = '.json';
 export const padNumber = (value: number, padLength = 2, padding = '0') =>
   (value + '').padStart(padLength, padding);
 
+// #region Time Utils
+
 export const msToHours = (milliseconds: number) => {
   const sec = milliseconds / 1000;
   const min = sec / 60;
@@ -23,6 +25,9 @@ export const offsetDays = (numDays: number) => {
 export const dateStamp = () =>
   new Date().toLocaleDateString().replace(/\//g, '-');
 
+// #endregion Time Utils
+
+// #region File Utils
 export const defaultFileName = () => `time-export_${dateStamp()}`;
 
 // src: https://stackoverflow.com/questions/34156282/how-do-i-save-json-to-local-text-file
@@ -40,3 +45,4 @@ export const download = (content: Object, fileName = defaultFileName()) => {
   a.download = fileName + EXPORT_FILE_EXT;
   a.click();
 };
+// #endregion File Utils
