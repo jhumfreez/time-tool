@@ -10,6 +10,16 @@ export const msToHours = (milliseconds: number) => {
   return hours;
 };
 
+/**
+ * Add days to current date. Provide negative integer for subtraction.
+ * @example
+ * const lastWeek = offsetDays(-7);
+ */
+export const offsetDays = (numDays: number) => {
+  const today = new Date();
+  return new Date(today.setDate(today.getDate() + numDays));
+};
+
 export const dateStamp = () =>
   new Date().toLocaleDateString().replace(/\//g, '-');
 
