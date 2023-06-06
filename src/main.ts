@@ -89,6 +89,7 @@ export class App {
         { nonNullable: true }
       ),
       endTime: this.fb.control(this.defaultEnd, { nonNullable: true }),
+      // TODO: Consider making the file editing form section a FormGroup
       stubTitle: this.fb.control(null),
       comments: this.fb.control(null),
     });
